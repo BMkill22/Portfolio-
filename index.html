@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kefilwe Mogano | Software Developer</title>
+<meta name="description" content="Portfolio of Kefilwe Mogano, a Software Development diploma graduate (2026) building web, mobile and database applications.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#12304f;--ink:#0f1c2c;--sky:#dcecfb;--paper:#f6fafe;--line:#b9d3ec;--accent:#e8602c;--muted:#475b72;
+--head:'Sora',system-ui,sans-serif;--body:'Figtree',system-ui,sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;font-family:var(--body);font-size:1.0625rem;line-height:1.65;color:var(--ink);background:var(--paper)}
+a{color:var(--navy)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+header.nav{position:sticky;top:0;z-index:10;background:var(--navy);color:#fff}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:56px;flex-wrap:wrap}
+.nav b{font-family:var(--head);font-weight:800;letter-spacing:.02em}
+.nav ul{display:flex;gap:4px 18px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+.nav a{color:#dcecfb;text-decoration:none;font-size:.95rem;font-weight:500}
+.nav a:hover{color:#fff;text-decoration:underline}
+.hero{background:var(--sky);border-bottom:1px solid var(--line)}
+.hero .wrap{display:grid;grid-template-columns:1.5fr 1fr;gap:40px;align-items:center;padding-top:72px;padding-bottom:72px}
+.hero h1{font-family:var(--head);font-weight:800;font-size:clamp(2.6rem,7vw,4.8rem);line-height:1;margin:0 0 14px;color:var(--navy);letter-spacing:-.02em}
+.hero .role{font-family:var(--head);font-size:1.25rem;font-weight:600;margin:0 0 18px}
+.hero p.lead{max-width:34rem;margin:0 0 26px;color:#22384f}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:6px;font-weight:600;text-decoration:none;border:2px solid var(--navy)}
+.btn.p{background:var(--navy);color:#fff}
+.btn.p:hover{background:var(--accent);border-color:var(--accent)}
+.btn.s{color:var(--navy)}
+.btn.s:hover{background:var(--navy);color:#fff}
+.status{background:#fff;border:2px solid var(--navy);border-radius:10px;padding:22px;box-shadow:8px 8px 0 var(--navy)}
+.status h2{font-family:var(--head);font-size:1rem;margin:0 0 12px}
+.status dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:.95rem}
+.status dt{color:var(--muted)}
+.status dd{margin:0;font-weight:600}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--accent);margin-right:6px}
+section{padding:68px 0;border-bottom:1px solid var(--line)}
+section h2.t{font-family:var(--head);font-weight:800;font-size:clamp(1.7rem,4vw,2.3rem);color:var(--navy);margin:0 0 26px;letter-spacing:-.01em}
+.about{display:grid;grid-template-columns:1.6fr 1fr;gap:40px}
+.about p{margin:0 0 14px;max-width:40rem}
+.langs{margin:0;padding:0;list-style:none}
+.langs li{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:8px 0}
+.langs span{color:var(--muted)}
+h3{font-family:var(--head);font-size:1.1rem;margin:0 0 10px;color:var(--navy)}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:34px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.chips li{background:var(--sky);border:1px solid var(--line);border-radius:999px;padding:4px 14px;font-size:.95rem;font-weight:500}
+.proj{display:grid;grid-template-columns:230px 1fr;gap:28px;padding:30px 0;border-top:2px solid var(--navy)}
+.proj:last-of-type{border-bottom:2px solid var(--navy)}
+.proj .meta{font-size:.95rem;color:var(--muted)}
+.proj .meta strong{display:block;font-family:var(--head);font-size:1.35rem;color:var(--navy);line-height:1.2;margin-bottom:6px}
+.proj p{margin:0 0 12px;max-width:40rem}
+.proj .chips li{background:#fff}
+.proj a.lnk{font-weight:600;display:inline-block;margin-top:12px}
+.tl{list-style:none;margin:0;padding:0 0 0 26px;border-left:3px solid var(--navy)}
+.tl li{position:relative;padding:0 0 28px}
+.tl li::before{content:"";position:absolute;left:-35px;top:7px;width:13px;height:13px;border-radius:50%;background:var(--accent);border:3px solid var(--paper)}
+.tl .yr{font-family:var(--head);font-weight:600;color:var(--accent)}
+.tl strong{display:block;font-size:1.1rem}
+.note{background:#fff;border:2px dashed var(--line);border-radius:8px;padding:18px 22px;max-width:40rem}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.contact ul{list-style:none;margin:0 0 24px;padding:0;font-size:1.1rem}
+.contact li{padding:6px 0}
+footer{background:var(--navy);color:#dcecfb;padding:26px 0;font-size:.9rem}
+@media(max-width:780px){
+.hero .wrap,.about,.two{grid-template-columns:1fr}
+.hero .wrap{padding-top:44px;padding-bottom:48px}
+.proj{grid-template-columns:1fr;gap:10px}
+section{padding:48px 0}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap">
+<b>KM</b>
+<nav aria-label="Main"><ul>
+<li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li>
+<li><a href="#education">Education</a></li><li><a href="#experience">Experience</a></li><li><a href="#contact">Contact</a></li>
+</ul></nav></div></header>
+
+<main>
+<div class="hero"><div class="wrap">
+<div>
+<h1>Kefilwe Mogano</h1>
+<p class="role">Software Developer</p>
+<p class="lead">I build web apps, Android apps and the databases behind them. I finish my Diploma in Information Technology (Software Development) in 2026 and I'm looking for an internship or junior developer role.</p>
+<div class="btns">
+<a class="btn p" href="Kefilwe_Mogano_CV.pdf" download>Download my CV</a>
+<a class="btn s" href="#projects">See my projects</a>
+</div></div>
+<aside class="status" aria-label="Quick facts">
+<h2><span class="dot"></span>Open to work</h2>
+<dl>
+<dt>Graduating</dt><dd>2026</dd>
+<dt>Studying</dt><dd>Rosebank College</dd>
+<dt>Main stack</dt><dd>C#, Kotlin, SQL, JavaScript</dd>
+<dt>Based in</dt><dd>Johannesburg</dd>
+<dt>GitHub</dt><dd><a href="https://github.com/BMkill22">BMkill22</a></dd>
+</dl></aside>
+</div></div>
+
+<section id="about"><div class="wrap">
+<h2 class="t">About me</h2>
+<div class="about">
+<div>
+<p>I'm a disciplined, quick learner who enjoys solving problems and applying new technology to real challenges. My coursework has covered application development, databases, software testing, cybersecurity and version control.</p>
+<p>On team projects my usual role is UI/UX design, and I also work on the front end and back end. I work in a five-person student team, the Tech Gurus, where I've learned to plan, divide work and review each other's code.</p>
+<p>Outside tech I was a school prefect, and I play soccer and box. Both taught me leadership, teamwork and how to stay consistent.</p>
+</div>
+<div>
+<h3>Languages</h3>
+<ul class="langs">
+<li>English <span>Fluent</span></li><li>Zulu <span>Fluent</span></li><li>Sepedi <span>Fluent</span></li><li>Afrikaans <span>Beginner</span></li>
+</ul></div>
+</div></div></section>
+
+<section id="skills"><div class="wrap">
+<h2 class="t">Skills</h2>
+<div class="skills">
+<div><h3>Languages</h3><ul class="chips"><li>C#</li><li>Kotlin</li><li>SQL</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li></ul></div>
+<div><h3>Tools and platforms</h3><ul class="chips"><li>Android Studio</li><li>Jetpack Compose</li><li>Git and GitHub</li><li>Microsoft SQL Server</li><li>MySQL</li><li>Figma</li><li>VS Code</li></ul></div>
+<div><h3>Soft skills</h3><ul class="chips"><li>Team leadership</li><li>Communication</li><li>Time management</li><li>Adaptability</li><li>Problem solving</li></ul></div>
+</div></div></section>
+
+<section id="projects"><div class="wrap">
+<h2 class="t">Projects</h2>
+
+<article class="proj">
+<div class="meta"><strong>CloudDesk</strong>Helpdesk ticketing system<br>Work Integrated Learning, team of 5</div>
+<div>
+<p>A cloud-based helpdesk where users log tickets and support staff resolve them. It has role-based sign-in, ticket create/read/update/delete, file uploads, comments, an admin dashboard and reports you can export to CSV. I helped design the interface and screens, and the team also produced the requirements and system design documents.</p>
+<ul class="chips"><li>PHP</li><li>SQLite</li><li>React (mockups)</li><li>Figma</li><li>GitHub</li></ul>
+<a class="lnk" href="https://github.com/RayMambani/CloudDesk-System">View code on GitHub</a>
+</div></article>
+
+<article class="proj">
+<div class="meta"><strong>BudgetQuest</strong>Gamified finance app for Android<br>Mobile Application Development</div>
+<div>
+<p>A budgeting app that turns saving into a game. Users earn XP, levels, streaks and badges for tracking expenses, and see their spending in charts. The app uses a Cyber-Noir theme, a local Room database and hashed passwords. A GitHub Actions pipeline runs unit tests on every push.</p>
+<ul class="chips"><li>Kotlin</li><li>Jetpack Compose</li><li>MVVM</li><li>Room</li><li>Hilt</li><li>GitHub Actions</li></ul>
+<a class="lnk" href="https://github.com/BMkill22">View on GitHub</a>
+</div></article>
+
+<article class="proj">
+<div class="meta"><strong>Pastimes</strong>Secondhand clothing marketplace<br>Web Design and Development</div>
+<div>
+<p>An online marketplace where people buy and sell preloved clothing. Sellers upload several photos per listing and go through verification before they can sell. The site runs on a six-table MySQL database and a Cormorant Garamond and DM Sans design system.</p>
+<ul class="chips"><li>PHP</li><li>MySQL</li><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+<a class="lnk" href="https://github.com/BMkill22">View on GitHub</a>
+</div></article>
+
+<article class="proj">
+<div class="meta"><strong>Gift of the Givers prototype</strong>Disaster relief NGO web app<br>Academic prototype</div>
+<div>
+<p>A responsive prototype for a disaster relief charity. It includes donation options in three currencies, a volunteer sign-up form, and Employee and Donor roles using ASP.NET Identity. I designed 11 page mockups and a logo in the charity's green, purple, blue and orange palette.</p>
+<ul class="chips"><li>ASP.NET Core</li><li>C#</li><li>Bootstrap</li><li>SQL</li></ul>
+<a class="lnk" href="https://github.com/BMkill22">View on GitHub</a>
+</div></article>
+</div></section>
+
+<section id="education"><div class="wrap">
+<h2 class="t">Education</h2>
+<ul class="tl">
+<li><span class="yr">2024 to 2026</span><strong>Diploma in Information Technology (Software Development)</strong>Rosebank College. Modules include Mobile Application Development, Web Design and Development, Advanced Databases and Work Integrated Learning.</li>
+<li><span class="yr">2018 to 2023</span><strong>Matric certificate</strong>Dowerglen High School</li>
+</ul></div></section>
+
+<section id="certifications"><div class="wrap">
+<h2 class="t">Certifications</h2>
+<!-- Add each certificate here, copying the block below -->
+<div class="note"><strong>Add your certificates here.</strong> Open index.html, find this section, and replace this box with each certificate's name, issuer and year.</div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+<h2 class="t">Experience</h2>
+<ul class="tl">
+<li><span class="yr">2018 to 2023</span><strong>School Prefect, Dowerglen High School</strong>Led and set an example for other learners. This is where I built my leadership, communication and time-management skills.</li>
+<li><span class="yr">2024 to 2026</span><strong>Team member, Tech Gurus</strong>Worked in a five-person student team on CloudDesk, BudgetQuest and Pastimes: UI/UX design, development, version control and documentation.</li>
+</ul></div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+<h2 class="t">Contact</h2>
+<ul>
+<li>Email: <a href="mailto:Kefilwemogano22@gmail.com">Kefilwemogano22@gmail.com</a></li>
+<li>GitHub: <a href="https://github.com/BMkill22">github.com/BMkill22</a></li>
+<li>LinkedIn: <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME">linkedin.com/in/YOUR-LINKEDIN-USERNAME</a></li>
+</ul>
+<a class="btn p" href="Kefilwe_Mogano_CV.pdf" download>Download my CV</a>
+</div></section>
+</main>
+<footer><div class="wrap">&copy; 2026 Kefilwe Mogano</div></footer>
+</body>
+</html>
